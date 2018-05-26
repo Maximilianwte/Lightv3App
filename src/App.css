@@ -1,28 +1,123 @@
+/* 1.0 General & Containers */
+
+html {
+
+}
+
 .App {
+  background-color: #222222;
+  color: white;
+  font-size: 2rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container {
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.fullPage {
+  min-height: 100vh
+}
+
+/* 2.0 Type */
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-title {
+p {
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.9em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+h4 {
+  font-size: 1.3em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* 3.0 Context */
+
+.lightLogo svg {
+  fill: rgba(255, 255, 255, 0.5);
+  height: 10em;
+}
+
+.fullPage#first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullPage#second {
+  background-image: url("./Assets/BgFirstSmall.jpg");
+  background-size: cover;
+  transform: translateY(100%);
+}
+
+.scroll {
+  width: 3em;
+  font-size: 0.7em;
+  position: fixed;
+  bottom: 2%;
+  right: 0.5%;
+  color: rgba(255, 255, 255, 0.479);
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg);
+  text-transform: lowercase;
+}
+
+/* Menu */
+
+.menuIcon {
+  display: inline-block;
+  cursor: pointer;
+  width: 5% !important;
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  z-index: 10;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

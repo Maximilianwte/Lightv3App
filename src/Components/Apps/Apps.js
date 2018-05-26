@@ -6,8 +6,9 @@ class Apps extends Component {
       <div className="wrapper">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col">
               <h2>Hallo.</h2>
+              <p>So siehts aus.</p>
             </div>
           </div>
         </div>
