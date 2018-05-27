@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 class Context extends Component {
   render() {
     return (
       <div className="wrapper">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Light - Webexperiences aus Hamburg.</title>
+          <title>Light - Amazing Web Experiences from Hamburg, Germany</title>
           <meta
             name="description"
-            content="Großartige Webapps maßgeschneidert für deine Ansprüche von Light aus Hamburg."
+            content="Awesome Web Apps, Voice and Chat Bots for your Company built exactly for your needs by Light from Hamburg, Germany."
           />
           <meta
             name="keywords"
-            content="Light, Lightstrategies, Hamburg, Germany,Deutsch, Deutschland,de, Website,Maximilian,Witte, Design, Apps, Web App, Deutschland, Bots, Alexa Bot, Messenger Bot, Google Home Bot, Agency, Agentur, beauftragen, Schleswig-Holstein"
+            content="Light, Lightstrategies, Hamburg, Germany, Website, Design, Apps, Web App, Deutschland, Bots, Alexa Bot, Messenger Bot, Google Home Bot, Agency, Agentur, beauftragen, Schleswig-Holstein,  Maximilian, Witte, Maximilian Witte"
           />
         </Helmet>
         <div className="container fullPage" id="first">
@@ -34,13 +34,17 @@ class Context extends Component {
           </div>
         </div>
         <div className="container fullPage" id="second">
-          <div className="row">
-            <div className="col">
-              <h3>Ihre Webapps sind bei uns in guten Händen.</h3>
-            </div>
-            <div className="row">
-              <div className="col">
-                <Link to="/apps">Webapps</Link>
+          <div className="row flexContainer">
+            <div className="container flexInlet">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h3>We Focus on building your most amazing web experience.</h3>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xs-12 button">
+                  <Link to="/apps">Webapps</Link>
+                </div>
               </div>
             </div>
           </div>

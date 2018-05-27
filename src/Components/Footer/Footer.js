@@ -7,11 +7,11 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
-      <Link to="/promotion">
+     {/*  <Link to="/promotion">
           <div className="PromoBanner">
             <h4>30% Off Your Web App</h4>
           </div>
-        </Link>
+        </Link> */}
         <div className="Social">
           <div className="Social" id="Facebook">
             <a

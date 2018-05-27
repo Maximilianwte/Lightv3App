@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 class Credits extends Component {
   render() {
     return (
@@ -16,8 +16,12 @@ class Credits extends Component {
             </svg>
           </div>
           <p>Light Webexperiences Maximilian Witte</p>
+          <p>Schäferkampsallee 17</p>
           <p>20357 Hamburg</p>
           <p>Germany</p>
+          <div className="col-xs-12 button">
+            <Link to="/privacy">Privacy Policy</Link>
+          </div>
           <a href="mailto:maximilianwitte@lightstrategies.com">
             maximilianwitte@lightstrategies.com
           </a>

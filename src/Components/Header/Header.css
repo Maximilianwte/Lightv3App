@@ -63,3 +63,47 @@
     cursor: pointer;
   }
   
+  /* CheckCountry */
+
+  .boxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  .checkCountryBox {
+    background-color: #222222;
+    border: white 0.1em solid;
+    padding: 3em 2em;
+    width: 80%;
+  }
+
+  .checkCountryBox h4 {
+    padding-bottom: 2em;
+  }
+
+  .buttonRow {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .buttonRow a {
+    border-radius: 2em;
+    background: white;
+    color: #222222;
+    padding: 0.3em 1em;
+    transition: .5s;
+  }
+
+  .buttonRow a:hover {
+    background: #fff5f5;
+    color: #3b3434;
+  }

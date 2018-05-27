@@ -11,6 +11,7 @@ import Apps from "./Components/Apps/Apps";
 import Contact from "./Components/Contact/Contact";
 import Imprint from "./Components/Footer/Credits";
 import Privacy from "./Components/Footer/Privacy";
+import CheckCountry from "./Components/Header/CheckCountry";
 
 class App extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <Header />
+        {/* <CheckCountry /> */}
         <div className="menuIcon" onClick={this.switchMenu}>
           <div className="bar1" />
           <div className="bar2" />

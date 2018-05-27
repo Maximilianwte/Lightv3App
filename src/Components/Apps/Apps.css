@@ -1,0 +1,144 @@
+.fullPage#Apps {
+  background-image: url("../../Assets/BgSecond.jpg");
+  background-size: cover;
+}
+
+/* .wrapper#Apps {
+  background-color: #fff5f5;
+  color: #222222;
+} */
+
+.row#ourTech {
+  background-color: white;
+  padding: 1em 0;
+  width: 100vw;
+}
+
+.col-6 img {
+  width: 80%;
+  transition: opacity 0.5s;
+}
+
+.col-6 img:hover {
+  opacity: 0.5;
+}
+
+.headLine {
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+/* Examples */
+
+.ExploreApps {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inletContainer#examples {
+  width: 20%;
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.AppList {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.AppBanner {
+  width: 100%;
+  border-radius: 0.2em;
+  cursor: pointer;
+  background-size: cover;
+  z-index: 2;
+}
+
+.AppBanner img {
+  height: 10em;
+  border-radius: 0.15em;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: #3131313b 0px 5px 10px;
+}
+
+.AppBanner#first {
+  margin-left: -3em;
+}
+
+.AppBanner#second {
+  margin-top: -3em;
+  margin-left: 0em;
+}
+
+.AppBanner#third {
+  margin-top: -3em;
+  margin-left: 3em;
+}
+
+.websiteExample {
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 40;
+  transform: translateX(-100%);
+  transition: 1s transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.websiteExample img {
+  width: 90vw;
+  box-shadow: #31313175 0px 10px 10px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.switchExample {
+  transform: translateX(0%);
+}
+
+.websiteExample#first {
+  background: radial-gradient(circle at top left, #ff498c 25%, #ff1567 100%);
+}
+
+.websiteExample#second {
+  background: radial-gradient(circle at top left, #292a3e 25%, #080a0f 150%);
+}
+
+.websiteExample#third {
+  background: radial-gradient(circle at top left, #fcf6e6 25%, #e5f0ec 100%);
+}
+
+.PricingContainer {
+  min-height: 10em;
+  background-image: url("../../Assets/Pricing.jpg");
+  background-position-y: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.contact p {
+  font-size: 0.6em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  color: rgba(255, 255, 255, 0.438);
+}
+
+.PricingContainer:hover {
+  background-position-y: 51.5%;
+}

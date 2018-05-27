@@ -1,8 +1,8 @@
 .container#contact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: #ebd7d7;
-    color: #2e2e2ee5;
+    background-color: #222222;
+    color: white;
   }
   
   #contact h3 {
