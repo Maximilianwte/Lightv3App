@@ -5,6 +5,7 @@ import $ from "jquery";
 import ReactGA from "react-ga";
 
 import Header from "./Components/Header/Header";
+import ScrollToTop from "./Components/Context/ScrollToTop";
 import Footer from "./Components/Footer/Footer";
 import Context from "./Components/Context/Context";
 import Apps from "./Components/Apps/Apps";
@@ -30,26 +31,28 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div className="App">
-        <Header />
-        {/* <CheckCountry /> */}
-        <div className="menuIcon" onClick={this.switchMenu}>
-          <div className="bar1" />
-          <div className="bar2" />
-          <div className="bar3" />
-        </div>
-        <Route exact path="/" component={Context} />
-        <Route path="/apps" component={Apps} />
-        <Route path="/contact" component={Contact} />
+        <ScrollToTop>
+          <div className="App">
+            <Header />
+            <CheckCountry />
+            <div className="menuIcon" onClick={this.switchMenu}>
+              <div className="bar1" />
+              <div className="bar2" />
+              <div className="bar3" />
+            </div>
+            <Route exact path="/" component={Context} />
+            <Route path="/apps" component={Apps} />
+            <Route path="/contact" component={Contact} />
 
-        <Route path="/imprint" component={Imprint} />
-        <Route path="/privacy" component={Privacy} />
-        <Footer />
-        <div className="scroll">
-          <h6>Scroll</h6>
-        </div>
-      </div>
-    </BrowserRouter>
+            <Route path="/imprint" component={Imprint} />
+            <Route path="/privacy" component={Privacy} />
+            <Footer />
+            <div className="scroll">
+              <h6>Scroll</h6>
+            </div>
+          </div>
+        </ScrollToTop>
+      </BrowserRouter>
     );
   }
 }

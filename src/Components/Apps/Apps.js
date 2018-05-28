@@ -14,6 +14,21 @@ class Apps extends Component {
       $(".websiteExample#third").toggleClass("switchExample");
     }
   };
+ /*  componentDidMount() {
+    $(window).scroll(function(event) {
+      var scroll = $(window).scrollTop();
+      console.log(scroll);
+      if (scroll > 350) {
+        $(".BgOverlay#first").addClass("OverlayAnimation");
+      } else if (scroll < 350) {
+        $(".BgOverlay#first").removeClass("OverlayAnimation");
+      } else if (scroll > 500) {
+        $(".BgOverlay#first").removeClass("OverlayAnimation");
+       
+        console.log("Worked!");
+      }
+    });
+  } */
   render() {
     return (
       <div className="wrapper" id="Apps">
@@ -42,12 +57,62 @@ class Apps extends Component {
             </div>
           </div>
         </div>
+
         <div className="container" id="AppsBelow">
+      {/*     <div className="BgOverlay" id="first" /> */}
           <div className="row">
             <div className="col headLine">
               <h3>Why we believe in Webapps.</h3>
             </div>
           </div>
+          {/* <div className="ballList">
+          <div className="ball left" id="first">
+            <svg
+              data-name="Ebene 2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="290.301"
+              height="290.301"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="42.514"
+                  y1="42.514"
+                  x2="247.787"
+                  y2="247.787"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#ff3f75" />
+                  <stop offset="1" stopColor="#c03" />
+                </linearGradient>
+              </defs>
+              <circle cx="145.15" cy="145.15" r="145.15" fill="url(#a)" />
+            </svg>
+          </div>
+          <div className="ball right" id="second">
+            <svg
+              data-name="Ebene 2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="290.301"
+              height="290.301"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="42.514"
+                  y1="42.514"
+                  x2="247.787"
+                  y2="247.787"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#ff3f75" />
+                  <stop offset="1" stopColor="#c03" />
+                </linearGradient>
+              </defs>
+              <circle cx="145.15" cy="145.15" r="145.15" fill="url(#a)" />
+            </svg>
+          </div>
+        </div> */}
         </div>
         {/* First */}
         <div className="container halfPage" id="">
@@ -242,21 +307,25 @@ class Apps extends Component {
         </div>
         {/* Examples Hidden */}
         <div className="websiteExamples">
-          <div class="websiteExample" id="first" onClick={this.switchImage}>
+          <div className="websiteExample" id="first" onClick={this.switchImage}>
             <img
               src={require("../../Assets/Yoga.jpg")}
               alt="WebApp Design"
               title="WebApp Design"
             />
           </div>
-          <div class="websiteExample" id="second" onClick={this.switchImage}>
+          <div
+            className="websiteExample"
+            id="second"
+            onClick={this.switchImage}
+          >
             <img
               src={require("../../Assets/Idea6.jpg")}
               alt="WebApp Design"
               title="WebApp Design"
             />
           </div>
-          <div class="websiteExample" id="third" onClick={this.switchImage}>
+          <div className="websiteExample" id="third" onClick={this.switchImage}>
             <img
               src={require("../../Assets/Shop.jpg")}
               alt="WebApp Design"

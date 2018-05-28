@@ -36,6 +36,7 @@
   
   #Profile img {
     height: 9em;
+    margin-bottom: 2em;
   }
   
   /* Form */
@@ -52,10 +53,10 @@
     font-size: 0.6em;
     height: 2em;
     border: none;
-    background-color: #ffffff56;
+    background-color: #ffffff;
     color: #363636;
     width: 100%;
-    margin-top: 0.15em;
+    margin-top: .5em;
     box-shadow: 0 0 20px rgba(63, 63, 63, 0.096);
   }
   
@@ -63,10 +64,10 @@
     font-size: 0.6em;
     height: 4em;
     border: none;
-    background-color: #ffffff94;
+    background-color: #ffffff;
     color: #363636;
     width: 100% !important;
-    margin-top: 0.15em;
+    margin-top: .5em;
     box-shadow: 0 0 20px rgba(63, 63, 63, 0.082);
   }
   
@@ -74,14 +75,15 @@
   .RoundButton a {
     font-size: 0.8em;
     background-color: #ffbcdb00;
-    color: rgba(63, 63, 63, 0.87);
+    color: rgba(255, 255, 255, 0.87);
     text-transform: capitalize;
-    border: rgba(63, 63, 63, 0.87) 0.15em solid;
+    border: rgba(255, 255, 255, 0.87) 0.15em solid;
     border-radius: 3em;
     cursor: pointer;
-    transition: .3s;
+    transition: .15s;
     box-shadow: #3131313a 0px 5px 5px;
     width: 60%;
+    margin-top: 1em;
   }
   
   .RoundButton a:hover {

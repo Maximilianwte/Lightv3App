@@ -71,11 +71,11 @@ class Contact extends Component {
             </svg>
             <input name="Vor- & Nachname:" type="text" placeholder="Name" />
             <input name="Antwort An:" type="email" placeholder="Email" />
-            <input name="Betreff:" type="text" placeholder="Betreff" />
-            <textarea name="Nachricht:" placeholder="Nachricht" />
+            <input name="Betreff:" type="text" placeholder="Subject" />
+            <textarea name="Nachricht:" placeholder="Message" />
             <input type="text" name="_gotcha" style={{ display: "none" }} />
             <input
-              defaultValue="Abschicken"
+              defaultValue="Submit"
               type="submit"
               id="SubmitButton"
               onClick={ReactGA.event({
