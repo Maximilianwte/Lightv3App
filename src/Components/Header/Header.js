@@ -12,12 +12,12 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 class Header extends Component {
   switchMenu() {
     $(".menuIcon").toggleClass("change");
-    $(".container#menuOverlay").toggleClass("slideIn");
+    $(".containerX#menuOverlay").toggleClass("slideIn");
     console.log("Menu switched");
   }
   render() {
     return (
-      <div className="container navLink" id="menuOverlay">
+      <div className="containerX navLink" id="menuOverlay">
         <div className="menuIcon" onClick={this.switchMenu}>
           <div className="bar1" />
           <div className="bar2" />

@@ -21,7 +21,7 @@ class App extends Component {
   }
   switchMenu() {
     $(".menuIcon").toggleClass("change");
-    $(".container#menuOverlay").toggleClass("slideIn");
+    $(".containerX#menuOverlay").toggleClass("slideIn");
     console.log("Menu switched");
     ReactGA.event({
       category: "Behaviour",
