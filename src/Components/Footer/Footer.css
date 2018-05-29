@@ -139,3 +139,12 @@
     margin-bottom: 2em;
     text-align: justify;
   }
+
+  .imprint a,.button {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .Credits a {
+    color: white;
+  }

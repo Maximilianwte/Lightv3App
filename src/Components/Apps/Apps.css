@@ -9,6 +9,11 @@
   margin-bottom: 4em;
 }
 
+#AppsBelow {
+  height: 10em;
+  z-index: 6;
+}
+
 /* .wrapper#Apps {
   background-color: #fff5f5;
   color: #222222;
@@ -21,21 +26,42 @@
 .BgOverlay {
   position: absolute;
   top: 0%;
-  left: 120%;
   height: 100%;
   width: 150%;
-  background-color: #ff1567;
-  transform: skew(-10deg);
-  transition: 1.25s;
+  transition: 0.5s;
 }
 
-.OverlayAnimation {
+.BgOverlay#first {
+  left: 90%;
+  background-color: #ff1567;
+  transform: skew(-10deg);
+}
+
+.BgOverlay#second {
+  left: -130%;
+  background-color: #ff1567;
+  transform: skew(10deg);
+}
+
+.BgOverlay#third {
+  left: -90%;
+  background-color: #ff1567;
+  transform: skew(10deg);
+}
+
+.BgOverlay#fourth {
+  left: -45%;
+  background-color: #ff1567;
+  transform: skew(10deg);
+}
+
+/* .OverlayAnimation {
   transform: translateX(-50%) skew(-10deg);
 }
 
 .OverlayAnimationTrough {
   transform: translateX(-200%) skew(-10deg);
-}
+} */
 
 .row#ourTech {
   background-color: white;
@@ -177,8 +203,10 @@
   .AppBanner img {
     height: 7em;
   }
-  .AppBanner#first, .AppBanner#second, .AppBanner#third {
+  .AppBanner#first,
+  .AppBanner#second,
+  .AppBanner#third {
     margin-left: 0%;
     margin-top: -15%;
   }
- }
+}

@@ -169,13 +169,38 @@ a:hover {
 }
 
 @media screen and (max-width: 561px) {
-  .container {
+  .fullPage {
     min-height: 23em;
+  }
+  .halfPage {
+    min-height: 20em;
+  }
+  .flexContainer {
+    min-height: 20em;
   }
  }
 
  @media screen and (min-width: 562px) and (max-width: 768px) {
-  .container {
+  .fullPage {
+    min-height: 20em;
+  }
+  .halfPage {
+    min-height: 20em;
+  }
+  .flexContainer {
     min-height: 20em;
   }
  }
+
+
+/* Preload Background Images */
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("./Assets/MaximilianWitte.png") url("./Assets/Pricing.jpg")
+    url("./Assets/BgSecond.jpg");
+}

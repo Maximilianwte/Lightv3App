@@ -35,12 +35,11 @@ class Credits extends Component {
             Images Provided By Pexels.com
           </a>
           <div>
-            Icons made by{" "}
             <a
               href="https://www.flaticon.com/authors/elegant-themes"
               title="Elegant Themes"
             >
-              Elegant Themes
+           
             </a>{" "}
             from{" "}
             <a href="https://www.flaticon.com/" title="Flaticon">

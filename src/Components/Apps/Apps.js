@@ -14,7 +14,7 @@ class Apps extends Component {
       $(".websiteExample#third").toggleClass("switchExample");
     }
   };
- /*  componentDidMount() {
+  /*  componentDidMount() {
     $(window).scroll(function(event) {
       var scroll = $(window).scrollTop();
       console.log(scroll);
@@ -59,7 +59,7 @@ class Apps extends Component {
         </div>
 
         <div className="container" id="AppsBelow">
-      {/*     <div className="BgOverlay" id="first" /> */}
+          <div className="BgOverlay" id="first" />
           <div className="row">
             <div className="col headLine">
               <h3>Why we believe in Webapps.</h3>
@@ -116,6 +116,7 @@ class Apps extends Component {
         </div>
         {/* First */}
         <div className="container halfPage" id="">
+        <div className="BgOverlay" id="second" />
           <div className="row flexContainer">
             <div className="container flexInlet">
               <div className="row">
@@ -140,6 +141,7 @@ class Apps extends Component {
         </div>
         {/* Second */}
         <div className="container halfPage" id="">
+        <div className="BgOverlay" id="third" />
           <div className="row flexContainer">
             <div className="container flexInlet">
               <div className="row">
@@ -165,6 +167,7 @@ class Apps extends Component {
         </div>
         {/* Third */}
         <div className="container halfPage" id="">
+        <div className="BgOverlay" id="fourth" />
           <div className="row flexContainer">
             <div className="container flexInlet">
               <div className="row">
